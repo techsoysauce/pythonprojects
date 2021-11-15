@@ -27,8 +27,8 @@ def ceasarcypher(direction, word, shift):
 print ("Hi, welcome to the ceasar cipher. \nUse encode to encrypt a new word and decode to make it plain text readable.")
 
 user_direction = input("Enter 'encode' to encrypt or 'decode' to decrypt: \n")
-text = input("Enter your text to encrypt/decrypt: \n")
-shift_num = int(input ("Enter your desired shift # : \n"))
+user_text = input("Enter your text to encrypt/decrypt: \n")
+user_shift_num = int(input ("Enter your desired shift # : \n"))
 
 #Call ceasarcypher function with values entered by user
-ceasarcypher(direction=user_direction, word=text, shift=shift_num)
+ceasarcypher(direction=user_direction, word=user_text, shift=user_shift_num)
