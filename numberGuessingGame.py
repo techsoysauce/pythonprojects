@@ -1,3 +1,6 @@
+#This program allows the user to play a number guessing game.  
+# They can choose an easy or hard option. Hard option, gives them less guesses. 
+# If they guess correctly, they win; otherwise, they lose wheneasy their attemps left run out.
 
 import random
 import os
@@ -6,6 +9,7 @@ clear()
 
 #Function to play guessing game
 def play_guessing_game():
+  """Allows the user to play a number guessing game.  No additional inputs necessary."""  
   print("WELCOME TO THE NUMBER GUESSING GAMES!!! \n\nI'm thinking of a number between 1-100. \nPlease select a difficulty level for guessing the number")
   user_guess_difficulty = input("Choose a difficulty, type 'easy' or 'hard': \n")
   random_number = random.randrange(1,101,1)
